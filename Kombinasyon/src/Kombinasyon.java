@@ -4,7 +4,7 @@ public class Kombinasyon {
 	
     public static void main(String[] args) {
     	
-        int n,r,n_faktoriyel=1,r_faktoriyel=1,cýkarma_faktoriyel = 1,sonuc;
+        int n,r,n_faktoriyel=1,r_faktoriyel=1,cÃ½karma_faktoriyel = 1,sonuc;
         
         Scanner input = new Scanner(System.in);
        
@@ -13,21 +13,21 @@ public class Kombinasyon {
         System.out.print("R: ");
         r = input.nextInt();
         
-        int cýkarma = n-r;
+        int cÃ½karma = n-r;
         
         for (int i = 1;i<=n;i++){
             n_faktoriyel *= i;
         }
         
-        for (int j = 1;j<=r;j++){5
+        for (int j = 1;j<=r;j++){
             r_faktoriyel *= j;
         }
         
-        for (int k = 1;k<=cýkarma;k++){
-            cýkarma_faktoriyel *= k;
+        for (int k = 1;k<=cÃ½karma;k++){
+            cÃ½karma_faktoriyel *= k;
         }
         
-        sonuc = n_faktoriyel/(r_faktoriyel*cýkarma_faktoriyel);
+        sonuc = n_faktoriyel/(r_faktoriyel*cÃ½karma_faktoriyel);
         System.out.print(sonuc);
     }
 }
